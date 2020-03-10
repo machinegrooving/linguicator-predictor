@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "linguicator-predictor"
-version = "0.1.0"
+version = "0.2.0"
 description = "Text prediction service for Linguiçator"
 authors = ["Machine Grooving Studio <machine.grooving@gmail.com>"]
 maintainers = ["Machine Grooving Studio <machine.grooving@gmail.com>"]
