@@ -15,6 +15,7 @@ linguicator = "linguicator_predictor:main"
 [tool.poetry.dependencies]
 python = "^3.7"
 flake8 = "^3.7.9"
+torch = "^1.4.0"
 
 [tool.poetry.dev-dependencies]
 
