@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "linguicator-predictor"
-version = "0.2.1"
+version = "0.3.0"
 description = "Text prediction service for Linguiçator"
 authors = ["Machine Grooving Studio <machine.grooving@gmail.com>"]
 maintainers = ["Machine Grooving Studio <machine.grooving@gmail.com>"]
@@ -15,6 +15,8 @@ linguicator = "linguicator_predictor:main"
 [tool.poetry.dependencies]
 python = "^3.7"
 flake8 = "^3.7.9"
+torch = "^1.4.0"
+transformers = "^2.5.1"
 
 [tool.poetry.dev-dependencies]
 
