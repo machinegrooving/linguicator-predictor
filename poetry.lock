@@ -4,10 +4,10 @@ description = "The AWS SDK for Python"
 name = "boto3"
 optional = false
 python-versions = "*"
-version = "1.12.27"
+version = "1.12.28"
 
 [package.dependencies]
-botocore = ">=1.15.27,<1.16.0"
+botocore = ">=1.15.28,<1.16.0"
 jmespath = ">=0.7.1,<1.0.0"
 s3transfer = ">=0.3.0,<0.4.0"
 
@@ -17,7 +17,7 @@ description = "Low-level, data-driven core of boto 3."
 name = "botocore"
 optional = false
 python-versions = "*"
-version = "1.15.27"
+version = "1.15.28"
 
 [package.dependencies]
 docutils = ">=0.10,<0.16"
@@ -257,8 +257,8 @@ category = "main"
 description = "State-of-the-art Natural Language Processing for TensorFlow 2.0 and PyTorch"
 name = "transformers"
 optional = false
-python-versions = ">=3.5.0"
-version = "2.5.1"
+python-versions = ">=3.6.0"
+version = "2.6.0"
 
 [package.dependencies]
 boto3 = "*"
@@ -303,12 +303,12 @@ python-versions = "^3.7"
 
 [metadata.files]
 boto3 = [
-    {file = "boto3-1.12.27-py2.py3-none-any.whl", hash = "sha256:d58f322045fad89788bb6a035ae84a248f1bc243775f7cf34a033e669dbb28ee"},
-    {file = "boto3-1.12.27.tar.gz", hash = "sha256:d5dc9faf5c0ba17396cca5200807790cf7036173304100a008602b211d7bdedd"},
+    {file = "boto3-1.12.28-py2.py3-none-any.whl", hash = "sha256:af09a4f3254fcf6a781ad1a700f702ce15526a25ebe96a14f5cd2ec46e9d924c"},
+    {file = "boto3-1.12.28.tar.gz", hash = "sha256:6f113f02f3098b3e37d24caa726a8e81fbc16f6d5cafbf61b7d285b9f7e104e9"},
 ]
 botocore = [
-    {file = "botocore-1.15.27-py2.py3-none-any.whl", hash = "sha256:5df5b59215902b68fe9a4f63608826661bfca321a94c927bd5d2d231441f9a66"},
-    {file = "botocore-1.15.27.tar.gz", hash = "sha256:bb1e86897c7393862a2a9b5ba9c68d9f20d2abd791d19e11d55d24e9d9388072"},
+    {file = "botocore-1.15.28-py2.py3-none-any.whl", hash = "sha256:74f81aca90cdbe084bcfa19589bd2c6470bb47dd1fd9635bf5484ecf7577fd61"},
+    {file = "botocore-1.15.28.tar.gz", hash = "sha256:21674f491f6bdc886179de644d00dec05276fac292117f86685513006d83fe0a"},
 ]
 certifi = [
     {file = "certifi-2019.11.28-py2.py3-none-any.whl", hash = "sha256:017c25db2a153ce562900032d5bc68e9f191e44e9a0f762f373977de9df1fbb3"},
@@ -488,8 +488,8 @@ tqdm = [
     {file = "tqdm-4.43.0.tar.gz", hash = "sha256:f35fb121bafa030bd94e74fcfd44f3c2830039a2ddef7fc87ef1c2d205237b24"},
 ]
 transformers = [
-    {file = "transformers-2.5.1-py3-none-any.whl", hash = "sha256:d08269bc7c088b47e3586002c4b10fa55d42330c9777b77ba60c3692efd5f283"},
-    {file = "transformers-2.5.1.tar.gz", hash = "sha256:c4b775ebffce65e1d8f2e5db74c5efdc4426ebecdaee1516c90573aafa1ceaf4"},
+    {file = "transformers-2.6.0-py3-none-any.whl", hash = "sha256:00bbe94c7768198aeec9ea32163cdd8f891202bb9d4a8a65a64839b71c8a780e"},
+    {file = "transformers-2.6.0.tar.gz", hash = "sha256:9d268e73ead5d8a12052003aefc8747949a6f85addc1f5735c1423b0b101e6db"},
 ]
 urllib3 = [
     {file = "urllib3-1.25.8-py2.py3-none-any.whl", hash = "sha256:2f3db8b19923a873b3e5256dc9c2dedfa883e33d87c690d9c7913e1f40673cdc"},
