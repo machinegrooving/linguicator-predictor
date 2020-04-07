@@ -6,6 +6,7 @@ import transformers
 
 
 MODEL_NAME = 'distilgpt2'
+MINUMUM_LENGTH = 20
 
 
 class DistilGPT2:
@@ -60,7 +61,11 @@ class DistilGPT2:
         tokenized = self.__tokenizer.encode(sequence, return_tensors = 'pt')
 
         # predict next tokens
-        predicted = self.__model.generate(tokenized, max_length = max_length)
+        predicted = self.__model.generate(tokenized,
+                                          min_length = MINUMUM_LENGTH,
+                                          max_length = max_length,
+                                          do_sample = True,
+                                          repetition_penalty = float('inf'))
 
         # return decoded generated sequence
         return self.__tokenizer.decode(predicted.tolist()[0])
