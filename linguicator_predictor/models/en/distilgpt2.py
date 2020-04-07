@@ -6,6 +6,7 @@ import transformers
 
 
 MODEL_NAME = 'distilgpt2'
+MINUMUM_LENGTH = 20
 
 
 class DistilGPT2:
@@ -61,6 +62,7 @@ class DistilGPT2:
 
         # predict next tokens
         predicted = self.__model.generate(tokenized,
+                                          min_length = MINUMUM_LENGTH,
                                           max_length = max_length,
                                           do_sample = True,
                                           repetition_penalty = float('inf'))
