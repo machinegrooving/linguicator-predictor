@@ -6,7 +6,7 @@ from linguicator_predictor.websocket import handle_websocket_connection
 from linguicator_predictor.models.en.distilgpt2 import DistilGPT2
 
 PORT = 8765
-HOST = 'localhost'
+HOST = '0.0.0.0'
 LOGGING_FORMAT = '%(asctime)s - %(levelname)s - %(message)s'
 LOGGING_DATE_FORMAT = '%m/%d/%Y %I:%M:%S %p'
 
