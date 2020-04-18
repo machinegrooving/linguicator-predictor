@@ -61,11 +61,16 @@ class DistilGPT2:
         tokenized = self.__tokenizer.encode(sequence, return_tensors = 'pt')
 
         # predict next tokens
-        predicted = self.__model.generate(tokenized,
-                                          min_length = MINUMUM_LENGTH,
-                                          max_length = max_length,
-                                          do_sample = True,
-                                          repetition_penalty = float('inf'))
+        predicted = self.__model.generate(
+            tokenized,
+            pad_token_id = self.__tokenizer.eos_token_id,
+            min_length = MINUMUM_LENGTH,
+            max_length = max_length,
+            do_sample = True,
+            repetition_penalty = float('inf'),
+            top_k = 50,
+            top_p = 0.95
+        )
 
         # return decoded generated sequence
         return self.__tokenizer.decode(predicted.tolist()[0])
